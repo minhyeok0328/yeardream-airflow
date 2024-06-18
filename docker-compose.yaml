@@ -95,9 +95,9 @@ services:
   postgres_custom:
     image: postgres:13
     environment:
-      POSTGRES_USER: user
+      POSTGRES_USER: root
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: airflow
+      POSTGRES_DB: custom_airflow
       TZ: Asia/Seoul
     volumes:
       - postgres-db-volume_custom:/var/lib/postgresql/data
